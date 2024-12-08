@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Testimonials</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and page layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Testimonial container */
+.testimonial-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title of testimonials */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Testimonial section */
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+/* Testimonial item styling */
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for testimonials */
+.testimonial:hover {
+  transform: translateY(-10px);
+}
+
+/* Image styling */
+.testimonial-img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+/* Text and author styling */
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial-position {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .testimonials {
+    justify-content: center;
+  }
+
+  .testimonial {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+</style>
+<body>
+  <div class="testimonial-container">
+    <h1>What Our Customers Say</h1>
+
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="hitler.jpg" alt="Customer 1" class="testimonial-img">
+        <p class="testimonial-text">"This service is amazing! I couldn't be happier with the results. Highly recommend!"</p>
+        <p class="testimonial-author">Aldof Hitler</p>
+        <p class="testimonial-position">CEO, Company A</p>
+      </div>
+
+      <div class="testimonial">
+        <img src="sademm.jpg" alt="Customer 2" class="testimonial-img">
+        <p class="testimonial-text">"A fantastic experience from start to finish. The team was professional and friendly."</p>
+        <p class="testimonial-author">Saddam Hussein</p>
+        <p class="testimonial-position">Marketing Director, Company B</p>
+      </div>
+
+      <div class="testimonial">
+        <img src="kim jong un.jpg" alt="Customer 3" class="testimonial-img">
+        <p class="testimonial-text">"I am really impressed with the quality of service. Will definitely use it again!"</p>
+        <p class="testimonial-author">Kim Jong Un</p>
+        <p class="testimonial-position">Product Manager, Company C</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
